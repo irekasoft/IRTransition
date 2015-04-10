@@ -10,6 +10,8 @@
 
 @interface SecondVC ()
 
+@property (assign) CGRect originalBounds;
+
 @end
 
 @implementation SecondVC
@@ -21,7 +23,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    
+    
+    self.originalBounds = self.view.bounds;
+    self.view.frame = self.view.bounds;
+    NSLog(@"you touch started position %@",NSStringFromCGRect(self.view.frame));
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -41,8 +50,9 @@
 }
 - (IBAction)panHandler:(UIPanGestureRecognizer *)gesture {
 
-// todo: move uiview
-//    CGPoint location = [gesture locationInView:self.view];
+//    todo: move uiview
+
+ //    CGPoint location = [gesture locationInView:self.view];
 //    NSLog(@"you touch started position %@",NSStringFromCGPoint(location));
 //    CGPoint startPoint = CGPointMake(0, 0);
 //    

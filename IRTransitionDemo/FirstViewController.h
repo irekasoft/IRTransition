@@ -12,6 +12,7 @@
 #import "IRAnimationController.h"
 #import "IRCardAnimationController.h"
 #import "IRMoveAnimationController.h"
+#import "IRRevealAnimationController.h"
 
 #import <UIKit/UIKit.h>
 
@@ -20,6 +21,7 @@
 @property (nonatomic, strong) PopupDynamicVC *popupDynamic;
 
 @property (strong, nonatomic) IRAnimationController *animationController;
+
 
 
 @end

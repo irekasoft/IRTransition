@@ -107,7 +107,6 @@
 }
 
 -(CATransform3D)firstTransform{
-    
     CATransform3D t1 = CATransform3DIdentity;
     t1.m34 = 1.0/-900;
     t1 = CATransform3DScale(t1, 0.95, 0.95, 1);

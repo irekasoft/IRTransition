@@ -11,11 +11,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucS-bi-04T">
-                    <rect key="frame" x="98" y="323" width="180" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Second View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucS-bi-04T">
+                    <rect key="frame" x="211" y="290" width="180" height="21"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="163" id="HQl-6Y-OnX"/>
                         <constraint firstAttribute="height" constant="21" id="n6Y-FH-Lrg"/>
@@ -31,7 +31,7 @@
                     </variation>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcf-y4-VA2">
-                    <rect key="frame" x="0.0" y="624" width="375" height="43"/>
+                    <rect key="frame" x="0.0" y="557" width="600" height="43"/>
                     <color key="backgroundColor" red="1" green="0.51929941390000001" blue="0.34241960189999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="43" id="Baa-of-3Kh"/>
@@ -53,7 +53,6 @@
                 <constraint firstAttribute="centerY" secondItem="ucS-bi-04T" secondAttribute="centerY" id="i7J-WX-elY"/>
                 <constraint firstAttribute="trailing" secondItem="xcf-y4-VA2" secondAttribute="trailing" id="w1A-qD-fd2"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outletCollection property="gestureRecognizers" destination="dyT-wb-2pj" appends="YES" id="VZe-na-cfD"/>
             </connections>

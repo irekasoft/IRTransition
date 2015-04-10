@@ -9,25 +9,28 @@
 
 @implementation IRZoomTransition
 
-- (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return 0.25;
+
+
+- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext fromVC:(UIViewController *)fromVC toVC:(UIViewController *)toVC fromView:(UIView *)fromView toView:(UIView *)toView {
+    
+    if(self.reverse){
+        [self executeReverseAnimation:transitionContext fromVC:fromVC toVC:toVC fromView:fromView toView:toView];
+    } else {
+        [self executeForwardsAnimation:transitionContext fromVC:fromVC toVC:toVC fromView:fromView toView:toView];
+    }
+    
 }
 
-- (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
-    
-    if(!self.reverse){
-        [self executePresentationAnimation:transitionContext];
-    }
-    else{
-        [self executeDismissalAnimation:transitionContext];
-    }
-}
 
--(void)executePresentationAnimation:(id<UIViewControllerContextTransitioning>)transitionContext{
-    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+-(void)executeForwardsAnimation:(id<UIViewControllerContextTransitioning>)transitionContext fromVC:(UIViewController *)fromVC toVC:(UIViewController *)toVC fromView:(UIView *)fromView toView:(UIView *)toView {
     
-    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-   
+    
+    fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    CGRect frame = [transitionContext initialFrameForViewController:fromVC];
+    fromVC.view.frame = frame;
+    toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    toVC.view.frame = frame;
+    
     [transitionContext.containerView addSubview:fromVC.view];
     [transitionContext.containerView addSubview:toVC.view];
     
@@ -43,13 +46,13 @@
     }];
 }
 
--(void)executeDismissalAnimation:(id<UIViewControllerContextTransitioning>)transitionContext{
+-(void)executeReverseAnimation:(id<UIViewControllerContextTransitioning>)transitionContext fromVC:(UIViewController *)fromVC toVC:(UIViewController *)toVC fromView:(UIView *)fromView toView:(UIView *)toView {
     
     UIView *inView = [transitionContext containerView];
     
-    UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
-    UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
     
     [inView insertSubview:toVC.view belowSubview:fromVC.view];

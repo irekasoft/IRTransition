@@ -23,22 +23,22 @@
 {
     UIWindow* window = [[UIApplication sharedApplication] keyWindow];
     
-    if ([[UIDevice currentDevice].systemVersion integerValue] >= 8)
-    {
-        //For iOS 8
-        self.providesPresentationContextTransitionStyle = YES;
-        self.definesPresentationContext = YES;
-        self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-    }
-    else
-    {
-        //For iOS 7
-        self.modalPresentationStyle = UIModalPresentationCurrentContext;
-    }
+//    if ([[UIDevice currentDevice].systemVersion integerValue] >= 8)
+//    {
+//        //For iOS 8
+//        self.providesPresentationContextTransitionStyle = YES;
+//        self.definesPresentationContext = YES;
+//        self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+//    }
+//    else
+//    {
+//        //For iOS 7
+//        self.modalPresentationStyle = UIModalPresentationCurrentContext;
+//    }
     
     
     self.transitioningDelegate = self;
-        self.modalPresentationStyle = UIModalPresentationCustom;
+    self.modalPresentationStyle = UIModalPresentationCustom;
     
     self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:0.7f];
     
@@ -103,6 +103,7 @@
 
 -(void) animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
+    NSLog(@"iii");
 
 }
 

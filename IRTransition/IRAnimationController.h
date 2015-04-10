@@ -6,6 +6,10 @@
 //  Copyright (c) 2015 iReka Soft. All rights reserved.
 //
 
+// based from https://github.com/ColinEberhardt/VCTransitionsLibrary
+//
+//
+
 #import <UIKit/UIKit.h>
 
 @interface IRAnimationController : NSObject <UIViewControllerAnimatedTransitioning>

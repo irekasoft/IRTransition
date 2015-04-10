@@ -19,6 +19,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -53,6 +55,17 @@
     vc.transitioningDelegate = self;
     IRMoveAnimationController *moveController = [[IRMoveAnimationController alloc] init];
     moveController.movementType = IRMoveFromTop;
+    self.animationController = moveController;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    
+}
+- (IBAction)revealTransition:(id)sender {
+    
+    SecondVC *vc = [[SecondVC alloc] init];
+    vc.transitioningDelegate = self;
+    IRRevealAnimationController *moveController = [[IRRevealAnimationController alloc] init];
+    moveController.revealType = IRRevealToLeft;
     self.animationController = moveController;
     [self presentViewController:vc animated:YES completion:nil];
     
