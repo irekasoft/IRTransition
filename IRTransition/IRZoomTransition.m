@@ -1,14 +1,13 @@
 //
 //  ZoomTransition.m
-//  Sirah25Rasul
 //
 //  Created by Muhammad Hijazi  on 12/11/13.
 //  Copyright (c) 2013 iReka Soft. All rights reserved.
 //
 
-#import "ZoomTransition.h"
+#import "IRZoomTransition.h"
 
-@implementation ZoomTransition
+@implementation IRZoomTransition
 
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
     return 0.25;
@@ -16,7 +15,7 @@
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     
-    if(self.isPresenting){
+    if(!self.reverse){
         [self executePresentationAnimation:transitionContext];
     }
     else{
