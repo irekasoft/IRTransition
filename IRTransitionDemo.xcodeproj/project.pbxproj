@@ -21,6 +21,7 @@
 		A3FB34401AD83462001A16DC /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB343E1AD83462001A16DC /* SecondVC.m */; };
 		A3FB34431AD83E90001A16DC /* IRAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB34421AD83E90001A16DC /* IRAnimationController.m */; };
 		A3FB34461AD84030001A16DC /* IRCardAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB34451AD84030001A16DC /* IRCardAnimationController.m */; };
+		A3FB34491AD843C8001A16DC /* IRMoveAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB34481AD843C8001A16DC /* IRMoveAnimationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		A3FB34421AD83E90001A16DC /* IRAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAnimationController.m; sourceTree = "<group>"; };
 		A3FB34441AD84030001A16DC /* IRCardAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRCardAnimationController.h; sourceTree = "<group>"; };
 		A3FB34451AD84030001A16DC /* IRCardAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRCardAnimationController.m; sourceTree = "<group>"; };
+		A3FB34471AD843C8001A16DC /* IRMoveAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRMoveAnimationController.h; sourceTree = "<group>"; };
+		A3FB34481AD843C8001A16DC /* IRMoveAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRMoveAnimationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				A3FB343A1AD83344001A16DC /* IRZoomTransition.m */,
 				A3FB34441AD84030001A16DC /* IRCardAnimationController.h */,
 				A3FB34451AD84030001A16DC /* IRCardAnimationController.m */,
+				A3FB34471AD843C8001A16DC /* IRMoveAnimationController.h */,
+				A3FB34481AD843C8001A16DC /* IRMoveAnimationController.m */,
 			);
 			path = IRTransition;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			files = (
 				A3FB34431AD83E90001A16DC /* IRAnimationController.m in Sources */,
 				A3FB34361AD83307001A16DC /* PopupDynamicVC.m in Sources */,
+				A3FB34491AD843C8001A16DC /* IRMoveAnimationController.m in Sources */,
 				A3FB340F1AD8326A001A16DC /* AppDelegate.m in Sources */,
 				A3FB343B1AD83344001A16DC /* IRZoomTransition.m in Sources */,
 				A3FB34401AD83462001A16DC /* SecondVC.m in Sources */,

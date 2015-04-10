@@ -14,15 +14,28 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F80-eh-ymm">
-                    <rect key="frame" x="96" y="69" width="123" height="29"/>
-                    <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
-                    </segments>
-                </segmentedControl>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcf-y4-VA2">
-                    <rect key="frame" x="149" y="193" width="40" height="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucS-bi-04T">
+                    <rect key="frame" x="98" y="323" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="163" id="HQl-6Y-OnX"/>
+                        <constraint firstAttribute="height" constant="21" id="n6Y-FH-Lrg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="HQl-6Y-OnX"/>
+                            <exclude reference="n6Y-FH-Lrg"/>
+                        </mask>
+                    </variation>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcf-y4-VA2">
+                    <rect key="frame" x="0.0" y="624" width="375" height="43"/>
+                    <color key="backgroundColor" red="1" green="0.51929941390000001" blue="0.34241960189999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Baa-of-3Kh"/>
+                    </constraints>
                     <state key="normal" title="Close">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
@@ -31,9 +44,25 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.098663431250386097" green="0.081359289761966117" blue="0.18139128989361697" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="xcf-y4-VA2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QJR-25-7FR"/>
+                <constraint firstAttribute="centerX" secondItem="ucS-bi-04T" secondAttribute="centerX" id="fXD-h7-kzd"/>
+                <constraint firstAttribute="bottom" secondItem="xcf-y4-VA2" secondAttribute="bottom" id="hHa-gw-ZLg"/>
+                <constraint firstAttribute="centerY" secondItem="ucS-bi-04T" secondAttribute="centerY" id="i7J-WX-elY"/>
+                <constraint firstAttribute="trailing" secondItem="xcf-y4-VA2" secondAttribute="trailing" id="w1A-qD-fd2"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="dyT-wb-2pj" appends="YES" id="VZe-na-cfD"/>
+            </connections>
             <point key="canvasLocation" x="118.5" y="415.5"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="dyT-wb-2pj">
+            <connections>
+                <action selector="panHandler:" destination="-1" id="CYk-gi-7ao"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
 </document>

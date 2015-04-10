@@ -11,6 +11,7 @@
 #import "SecondVC.h"
 #import "IRAnimationController.h"
 #import "IRCardAnimationController.h"
+#import "IRMoveAnimationController.h"
 
 #import <UIKit/UIKit.h>
 

@@ -47,6 +47,17 @@
     
 }
 
+- (IBAction)moveTransition:(id)sender {
+    
+    SecondVC *vc = [[SecondVC alloc] init];
+    vc.transitioningDelegate = self;
+    IRMoveAnimationController *moveController = [[IRMoveAnimationController alloc] init];
+    moveController.movementType = IRMoveFromTop;
+    self.animationController = moveController;
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    
+}
 
 #pragma mark - UIViewControllerTransitioningDelegate
 - (id <UIViewControllerAnimatedTransitioning>) animationControllerForPresentedController:(UIViewController *)presented

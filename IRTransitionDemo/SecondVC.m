@@ -13,6 +13,9 @@
 @end
 
 @implementation SecondVC
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,6 +38,43 @@
 */
 - (IBAction)close:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)panHandler:(UIPanGestureRecognizer *)gesture {
+
+// todo: move uiview
+//    CGPoint location = [gesture locationInView:self.view];
+//    NSLog(@"you touch started position %@",NSStringFromCGPoint(location));
+//    CGPoint startPoint = CGPointMake(0, 0);
+//    
+//    switch (gesture.state) {
+//        case UIGestureRecognizerStateBegan:{
+//            startPoint = location;
+//            break;
+//        }
+//        case UIGestureRecognizerStateChanged:{
+//            
+//            self.view.transform = CGAffineTransformMakeTranslation(0, startPoint.y - location.y);
+//            
+////            NSLog(@"you touch started position %f",location.y + startPoint.y);
+//            break;
+//        }
+//        case UIGestureRecognizerStateEnded: {
+//            
+//            self.view.transform = CGAffineTransformIdentity;
+//            break;
+//            
+//        }
+//        default:{
+//            
+//            break;
+//        }
+//            
+//    }
+
+            
+
+
+
 }
 
 @end
