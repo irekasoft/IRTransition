@@ -13,7 +13,9 @@
 #import "IRCardAnimationController.h"
 #import "IRMoveAnimationController.h"
 #import "IRRevealAnimationController.h"
-
+#import "IRPortalAnimationController.h"
+#import "UIViewController+IRViewPopping.h"
+#import "TestPopinViewController.h"
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController <UIViewControllerTransitioningDelegate>

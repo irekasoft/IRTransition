@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="veh-lA-sKr">
-                                <rect key="frame" x="133" y="160" width="111" height="30"/>
+                                <rect key="frame" x="131" y="28" width="111" height="30"/>
                                 <state key="normal" title="Zoom Transition">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="33p-N9-8S5">
-                                <rect key="frame" x="128" y="457" width="116" height="30"/>
+                                <rect key="frame" x="131" y="259" width="116" height="30"/>
                                 <state key="normal" title="Pop-up Dynamic">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fd-Bo-cqv">
-                                <rect key="frame" x="130" y="207" width="104" height="30"/>
+                                <rect key="frame" x="128" y="75" width="104" height="30"/>
                                 <state key="normal" title="Card Transition">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,7 +44,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jR7-3w-0DJ">
-                                <rect key="frame" x="130" y="255" width="109" height="30"/>
+                                <rect key="frame" x="128" y="123" width="109" height="30"/>
                                 <state key="normal" title="Move Transition">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wjx-X7-byr">
-                                <rect key="frame" x="132" y="301" width="117" height="30"/>
+                                <rect key="frame" x="130" y="169" width="117" height="30"/>
                                 <state key="normal" title="Reveal Transition">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -61,6 +61,28 @@
                                     <action selector="revealTransition:" destination="9pv-A4-QxB" eventType="touchUpInside" id="hj7-Le-Ymm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVW-OS-DNc">
+                                <rect key="frame" x="130" y="213" width="111" height="30"/>
+                                <state key="normal" title="Portal Transition">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="portalTransition:" destination="9pv-A4-QxB" eventType="touchUpInside" id="sSX-dj-C6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Toc-Oj-qQy">
+                                <rect key="frame" x="131" y="319" width="104" height="30"/>
+                                <state key="normal" title="IRViewPopping">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewPopping:" destination="9pv-A4-QxB" eventType="touchUpInside" id="f8I-Cu-9Ct"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ai0-by-8oR">
+                                <rect key="frame" x="95" y="304" width="188" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

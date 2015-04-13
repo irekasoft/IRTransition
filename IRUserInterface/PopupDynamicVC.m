@@ -55,6 +55,7 @@
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     self.view_message.layer.cornerRadius = 5;
     
+    [self.lbl_title setText:@"adf"];
     
 }
 

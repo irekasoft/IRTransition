@@ -20,6 +20,7 @@
 @property (nonatomic) UIAttachmentBehavior *attachmentBehavior;
 @property (nonatomic) UIPushBehavior *pushBehavior;
 @property (nonatomic) UIDynamicItemBehavior *itemBehavior;
+@property (weak, nonatomic) IBOutlet UILabel *lbl_title;
 
 @property (weak, nonatomic) IBOutlet UIView *view_message;
 

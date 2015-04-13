@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31247951ADC70AA0020F458 /* UIViewController+IRViewPopping.m in Sources */ = {isa = PBXBuildFile; fileRef = A31247941ADC70AA0020F458 /* UIViewController+IRViewPopping.m */; };
+		A31247991ADC76FB0020F458 /* TestPopinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31247971ADC76FB0020F458 /* TestPopinViewController.m */; };
+		A312479A1ADC76FB0020F458 /* TestPopinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A31247981ADC76FB0020F458 /* TestPopinViewController.xib */; };
+		A3632A431AD92A9300A52840 /* IRPortalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3632A421AD92A9300A52840 /* IRPortalAnimationController.m */; };
 		A3FB340C1AD8326A001A16DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB340B1AD8326A001A16DC /* main.m */; };
 		A3FB340F1AD8326A001A16DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB340E1AD8326A001A16DC /* AppDelegate.m */; };
 		A3FB34121AD8326A001A16DC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB34111AD8326A001A16DC /* FirstViewController.m */; };
@@ -37,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A31247931ADC70AA0020F458 /* UIViewController+IRViewPopping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IRViewPopping.h"; sourceTree = "<group>"; };
+		A31247941ADC70AA0020F458 /* UIViewController+IRViewPopping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IRViewPopping.m"; sourceTree = "<group>"; };
+		A31247961ADC76FB0020F458 /* TestPopinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPopinViewController.h; sourceTree = "<group>"; };
+		A31247971ADC76FB0020F458 /* TestPopinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPopinViewController.m; sourceTree = "<group>"; };
+		A31247981ADC76FB0020F458 /* TestPopinViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestPopinViewController.xib; sourceTree = "<group>"; };
+		A3632A411AD92A9300A52840 /* IRPortalAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRPortalAnimationController.h; sourceTree = "<group>"; };
+		A3632A421AD92A9300A52840 /* IRPortalAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRPortalAnimationController.m; sourceTree = "<group>"; };
 		A3FB34061AD8326A001A16DC /* IRTransitionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRTransitionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB340A1AD8326A001A16DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3FB340B1AD8326A001A16DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,10 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A31247921ADC6FF60020F458 /* IRViewPopping */ = {
+			isa = PBXGroup;
+			children = (
+				A31247931ADC70AA0020F458 /* UIViewController+IRViewPopping.h */,
+				A31247941ADC70AA0020F458 /* UIViewController+IRViewPopping.m */,
+			);
+			path = IRViewPopping;
+			sourceTree = "<group>";
+		};
 		A3FB33FD1AD8326A001A16DC = {
 			isa = PBXGroup;
 			children = (
 				A3FB344D1AD86634001A16DC /* ReadMe.md */,
+				A31247921ADC6FF60020F458 /* IRViewPopping */,
 				A3FB34381AD83344001A16DC /* IRTransition */,
 				A3FB34321AD83307001A16DC /* IRUserInterface */,
 				A3FB34081AD8326A001A16DC /* IRTransitionDemo */,
@@ -119,6 +140,9 @@
 				A3FB343C1AD83462001A16DC /* SecondVC.xib */,
 				A3FB343D1AD83462001A16DC /* SecondVC.h */,
 				A3FB343E1AD83462001A16DC /* SecondVC.m */,
+				A31247961ADC76FB0020F458 /* TestPopinViewController.h */,
+				A31247971ADC76FB0020F458 /* TestPopinViewController.m */,
+				A31247981ADC76FB0020F458 /* TestPopinViewController.xib */,
 				A3FB34191AD8326A001A16DC /* Images.xcassets */,
 				A3FB341B1AD8326A001A16DC /* LaunchScreen.xib */,
 				A3FB34091AD8326A001A16DC /* Supporting Files */,
@@ -175,6 +199,8 @@
 				A3FB34481AD843C8001A16DC /* IRMoveAnimationController.m */,
 				A3FB344A1AD85833001A16DC /* IRRevealAnimationController.h */,
 				A3FB344B1AD85833001A16DC /* IRRevealAnimationController.m */,
+				A3632A411AD92A9300A52840 /* IRPortalAnimationController.h */,
+				A3632A421AD92A9300A52840 /* IRPortalAnimationController.m */,
 			);
 			path = IRTransition;
 			sourceTree = "<group>";
@@ -262,6 +288,7 @@
 				A3FB343F1AD83462001A16DC /* SecondVC.xib in Resources */,
 				A3FB34181AD8326A001A16DC /* Main.storyboard in Resources */,
 				A3FB34371AD83307001A16DC /* PopupDynamicVC.xib in Resources */,
+				A312479A1ADC76FB0020F458 /* TestPopinViewController.xib in Resources */,
 				A3FB341D1AD8326A001A16DC /* LaunchScreen.xib in Resources */,
 				A3FB341A1AD8326A001A16DC /* Images.xcassets in Resources */,
 			);
@@ -282,10 +309,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3FB34431AD83E90001A16DC /* IRAnimationController.m in Sources */,
+				A31247991ADC76FB0020F458 /* TestPopinViewController.m in Sources */,
 				A3FB344E1AD86634001A16DC /* ReadMe.md in Sources */,
 				A3FB34361AD83307001A16DC /* PopupDynamicVC.m in Sources */,
 				A3FB34491AD843C8001A16DC /* IRMoveAnimationController.m in Sources */,
 				A3FB340F1AD8326A001A16DC /* AppDelegate.m in Sources */,
+				A3632A431AD92A9300A52840 /* IRPortalAnimationController.m in Sources */,
+				A31247951ADC70AA0020F458 /* UIViewController+IRViewPopping.m in Sources */,
 				A3FB343B1AD83344001A16DC /* IRZoomTransition.m in Sources */,
 				A3FB34401AD83462001A16DC /* SecondVC.m in Sources */,
 				A3FB34121AD8326A001A16DC /* FirstViewController.m in Sources */,
