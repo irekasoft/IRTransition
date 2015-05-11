@@ -23,8 +23,6 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -35,7 +33,7 @@
 - (IBAction)viewPopping:(id)sender {
     
     TestPopinViewController *popin = [[TestPopinViewController alloc] init];
-    [popin setPopinTransitionStyle:IRPopinTransitionStyleSlide];
+    [popin setPopinTransitionStyle:IRPopinTransitionStyleZoom];
 
     if ([self isDismissable]) {
         [popin setPopinOptions:IRPopinDefault];
