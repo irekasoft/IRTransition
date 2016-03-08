@@ -64,7 +64,7 @@
     [super viewWillLayoutSubviews];
     
     self.view_message.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
-    self.view_message.hidden = YES;
+//    self.view_message.hidden = YES;
     self.originalBounds = self.view_message.bounds;
     self.originalCenter = self.view_message.center;
 }
