@@ -10,8 +10,10 @@
 
 @interface PopupDynamicVC : UIViewController <UIViewControllerTransitioningDelegate>
 
-@property (weak, nonatomic) IBOutlet UIView *redSquare;
-@property (weak, nonatomic) IBOutlet UIView *blueSquare;
+@property (assign) BOOL showUpWithDynamic;
+
+@property (weak, nonatomic) UIView *redSquare;
+@property (weak, nonatomic) UIView *blueSquare;
 
 @property (nonatomic, assign) CGRect originalBounds;
 @property (nonatomic, assign) CGPoint originalCenter;
